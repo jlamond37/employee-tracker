@@ -5,13 +5,12 @@ const inquirer = require('inquirer');
 // import console.table
 const cTable = require('console.table'); 
 
-require('dotenv').config()
 
 // connection to database
 const connection = mysql.createConnection({
   host: 'localhost',
   user: 'root',
-  password: process.env.MYSQL_PASSWORD,
+  password: 'root1234',
   database: 'employee_db'
 });
 
